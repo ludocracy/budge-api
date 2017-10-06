@@ -6,4 +6,4 @@ const TransactionSchema = new Schema({
   tags: [String],
 });
 
-module.export.TransactionSchema = TransactionSchema;
+module.exports.TransactionSchema = TransactionSchema;

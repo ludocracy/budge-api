@@ -1,5 +1,5 @@
 const mongoose = require('mongoose'),
-  TransactionSchema = require('transaction'),
+  TransactionSchema = require('./transaction'),
   Schema = mongoose.Schema;
 
 const RecurrenceSchema = new Schema({
@@ -11,7 +11,7 @@ const RecurrenceSchema = new Schema({
   default_transaction: TransactionSchema,
 });
 
-module.export = {
+module.exports = {
   Recurrence: mongoose.model('Recurrence', RecurrenceSchema),
   Transaction: mongoose.model('Transaction', TransactionSchema),
 };

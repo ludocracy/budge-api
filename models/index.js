@@ -7,6 +7,6 @@ mongoose.connection.openUri(process.env.DB_CONN, {}, (err, conn) => {
 
 module.exports = {
   Account: require('./account'),
-  Recurrence: require('./recurrence').Recurrence,
   Transaction: require('./transaction').Transaction,
+  Recurrence: require('./recurrence').Recurrence,
 };
